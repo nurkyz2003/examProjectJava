@@ -24,12 +24,12 @@
 
         <input type="hidden" name="id" th:field="*{id}">
         <div style="display:flex ;flex-direction: column;justify-content: space-between;height: 25%;">
-            <input  style=" background: none;color: white; width: 90%;outline: none;border:none;border-bottom: 1px solid white;"type="text"  name="companyName" th:field="*{companyName}" placeholder="Company Name">
-            <p   style="color: red" th:if="${#fields.hasErrors('companyName')}" th:errors="*{companyName}">Name Error</p>
+            <input  style=" background: none;color: black; width: 90%;outline: none;border:none;border-bottom: 1px solid white;"type="text"  name="companyName" th:field="*{companyName}" placeholder="Company Name">
+            <p   style="color: blueviolet" th:if="${#fields.hasErrors('companyName')}" th:errors="*{companyName}">Name Error</p>
         </div>
         <div style="display:flex ;flex-direction: column;justify-content: space-between;height: 25%;margin-top: 20px;">
-            <input style=" background: none; color: white; width: 90%;outline: none;border:none;border-bottom: 1px solid white;"type="text" name="locatedCountry" th:field="*{locatedCountry}" placeholder="Located Country">
-            <p  style="color: red" th:if="${#fields.hasErrors('locatedCountry')}" th:errors="*{locatedCountry}">Country Error</p>
+            <input style=" background: none; color: black; width: 90%;outline: none;border:none;border-bottom: 1px solid white;"type="text" name="locatedCountry" th:field="*{locatedCountry}" placeholder="Located Country">
+            <p  style="color: blueviolet" th:if="${#fields.hasErrors('locatedCountry')}" th:errors="*{locatedCountry}">Country Error</p>
         </div>
         <button style="margin-top: 30px;border: none;width: 90%;border-radius: 20px; background: #F8DB57;color: black;" type="submit" >Add</button>
 
