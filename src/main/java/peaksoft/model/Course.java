@@ -52,12 +52,6 @@ public class Course {
 
     @OneToMany(cascade = {MERGE, REFRESH, DETACH, REMOVE, PERSIST},fetch = LAZY, mappedBy = "course")
     private List<Instructor> instructors;
-    /*public void addInstructors(Instructor instructor){
-        if (instructors==null){
-            instructors=new ArrayList<>();
-        }
-        instructors.add(instructor);
-    }*/
 
     public void addInstructors(Instructor instructor){
         if (instructors==null){
