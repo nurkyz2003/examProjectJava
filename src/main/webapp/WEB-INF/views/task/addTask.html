@@ -15,19 +15,19 @@
           action="#"
           th:action="@{/{id}/saveTask(id=${lessonId})}"
           th:object="${task}"
-          method="POST" style=" background:#253446;width: 300px; border-radius:10px;margin: 100px 500px;height: 300px;
-            border: 1px solid black;padding-top: 50px;padding-left: 25px;font-size: 15px;
+          method="POST" style=" background:navajowhite;width: 300px; border-radius:10px;margin: 100px 500px;height: 230px;
+            border: 2px solid black;padding-top: 50px;padding-left: 25px;font-size: 15px;
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
 
     <input type="hidden" name="id" th:field="*{id}">
     <div style="display:flex ;flex-direction: column;justify-content: space-between;height: 25%;">
-      <input style=" background: none;color: white; width: 90%;outline: none;border:none;border-bottom: 1px solid white;"type="text" name="taskName" th:field="*{taskName}" placeholder="Task name">
+      <input style=" background: none;color: black; width: 90%;outline: none;border:none;border-bottom: 1px solid white;"type="text" name="taskName" th:field="*{taskName}" placeholder="Task name">
     </div>
-    <input style=" background: none;color: white; width: 90%;outline: none;border:none;border-bottom: 1px solid white;"type="text" name="taskText" th:field="*{taskText}" placeholder="Task text">
+    <input style=" background: none;color: black; width: 90%;outline: none;border:none;border-bottom: 1px solid white;"type="text" name="taskText" th:field="*{taskText}" placeholder="Task text">
     <br><br>
-    <input style=" background: none;color: white; width: 90%;outline: none;border:none;border-bottom: 1px solid white;"type="text" name="deadline" th:field="*{deadLine}" placeholder="Deadline">
+    <input style=" background: none;color: black; width: 90%;outline: none;border:none;border-bottom: 1px solid white;"type="text" name="deadline" th:field="*{deadLine}" placeholder="Deadline">
     <br><br>
-    <button style="margin-top: 30px;border: none;width: 90%;border-radius: 20px; background: #F8DB57;color: black;" type="submit" >Add</button>
+    <button style="margin-top: 30px;border: none;width: 90%;border-radius: 20px; background:  #242249;color: white;" type="submit" >Add</button>
 
   </form>
 </div>

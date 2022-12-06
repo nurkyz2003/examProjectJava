@@ -1,34 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    --
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>update-group</title>
-  </head>
-  <body>
-    <form
-      th:action="@{/{companyId}/{id}/saveUpdateGroup(id=${group.id}, companyId=${companyId})}"
-      th:object="${group}"
-      method="post"
-    >
-         <input type="hidden" name="id" th:field="*{id}">
-         <input type="text" name="groupName" th:field="*{groupName}" placeholder="Group Name" required>
-         <br><br>
-         <input type="text" name="dateOfStart" th:field="*{dateOfStart}" placeholder="date of start" required>
-         <br><br>
-         <input type="text" name="image" th:field="*{image}" placeholder="image" required>
-         <br><br>
-         <input type="submit" value="Add">
-
-      </form>
-      </body>
-      </html>  -->
-
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
@@ -41,13 +10,13 @@
         * {
             box-sizing: border-box;
         }
-
-        /* Add padding to containers */
         .container {
-            background: #253446;
+            background: navajowhite;
             width: 300px;
-            border-radius: 10px;
+            border-radius: 20px;
+            border: 2px solid black;
             height: 300px;
+            padding-top: 10px;
             padding-bottom: 20px;
             padding-left: 25px;
             font-size: 15px;
@@ -55,7 +24,7 @@
 
         input {
             background: none;
-            color: white;
+            color: black;
             width: 90%;
             outline: none;
             border: none;
@@ -64,12 +33,12 @@
 
         /* Set a style for the submit button */
         .registerbtn {
-            margin-top: 20px;
+            margin-top: 10px;
             border: none;
             width: 90%;
             border-radius: 20px;
-            background: #f8db57;
-            color: #253446;
+            background: #242249;
+            color: white;
             padding: 10px;
             opacity: 0.9;
         }
@@ -79,7 +48,7 @@
         }
 
         a {
-            color: dodgerblue;
+            color: red;
         }
 
         form {
@@ -93,7 +62,6 @@
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            /* height: 10%; */
         }
         label {
             color: white;
@@ -110,28 +78,28 @@
 >
     <div class="container">
         <input type="hidden" name="id" th:field="*{id}" />
-        <label for="email">Group Name</label>
+<!--        <label for="email">Group Name</label>-->
         <input
                 type="text"
-                placeholder="Enter company name"
+                placeholder="Group name"
                 th:field="*{groupName}"
                 name="email"
                 id="email"
                 required
         />
-        <label for="psw">Date of start</label>
+<!--        <label for="psw">Date of start</label>-->
         <input
                 type="date"
-                placeholder="Enter date of start"
+                placeholder="Choose date"
                 th:field="*{dateOfStart}"
                 name="psw"
                 id="psw"
                 required
         />
-        <label for="email">Description</label>
+<!--        <label for="email">Description</label>-->
         <input
                 type="text"
-                placeholder="Enter image"
+                placeholder="Image"
                 th:field="*{image}"
                 name="email"
                 id="email1"

@@ -11,11 +11,11 @@
             box-sizing: border-box;
         }
 
-        /* Add padding to containers */
         .container {
-            background: #253446;
+            background: navajowhite;
             width: 300px;
-            border-radius: 10px;
+            border-radius: 20px;
+            border: 2px solid black;
             height: 300px;
             padding-top: 10px;
             padding-bottom: 20px;
@@ -25,21 +25,20 @@
 
         input {
             background: none;
-            color: white;
+            color: black;
             width: 90%;
             outline: none;
             border: none;
             border-bottom: 1px solid white;
         }
 
-        /* Set a style for the submit button */
         .registerbtn {
             margin-top: 10px;
             border: none;
             width: 90%;
             border-radius: 20px;
-            background: #f8db57;
-            color: #253446;
+            background: #242249;
+            color: white;
             padding: 10px;
             opacity: 0.9;
         }
@@ -49,7 +48,7 @@
         }
 
         a {
-            color: dodgerblue;
+            color: red;
         }
 
         form {
@@ -82,10 +81,10 @@
     <div class="container">
         <div>
             <input type="hidden" name="id" th:field="*{id}" />
-            <label for="email">Group Name</label>
+<!--            <label for="email">Group Name</label>-->
             <input
                     type="text"
-                    placeholder="Enter group name"
+                    placeholder="Group name"
                     th:field="*{groupName}"
                     name="email"
                     id="email"
@@ -93,7 +92,6 @@
             />
         </div>
         <div>
-            <label for="psw">Date of start</label>
             <input
                     type="date"
                     placeholder="Choose date"
@@ -104,10 +102,9 @@
             />
         </div>
         <div>
-            <label for="psw">Image</label>
             <input
                     type="text"
-                    placeholder="Enter image"
+                    placeholder="Image"
                     th:field="*{image}"
                     name="psw"
                     id="psw1"
